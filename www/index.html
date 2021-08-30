@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/stilos.css">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div id="reservas">
+          <!-- LOGO -->
+          <div v-if="steep == 1" class="inicio">
+            <img class="logo" src="img/logo_n.png">
+            <h1 class="logoFuente">N'Hora</h1>
+            <button @click="steep = 2">GO!</button>
+          </div>
+
+          <!-- STORIES -->
+          <div v-if="steep == 2" class="bgWhite">
+            <button @click="steep = 1"><-</button>
+            <button @click="steep = 3">GO!</button>
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col">
+                  <img class="logoPequeno" src="img/logo_n.png">
+                </div>
+                <div class="col">
+                  <h1 class="descubrir">Descubrir</h1>
+                </div>
+                <div class="col">
+                  <i class="fas fa-search lupa"></i>
+                </div>
+              </div>
+            </div>
+            <!-- STORIESPHOTOS -->
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col">
+                  <img class="storiesPhotos" src="img/barber.png">
+                  <p class="storiesText"> Barber</p>
+                </div>
+                <div class="col">
+                  <img class="storiesPhotos" src="img/veterinaria.png">
+                  <p class="storiesText">Veterinaria</p>
+                </div>
+                <div class="col">
+                  <img class="storiesPhotos" src="img/abarrotes.png">
+                  <p class="storiesText">Abarrotes</p>
+                </div>
+                <div class="col">
+                  <img class="storiesPhotos" src="img/manicure.png">
+                  <p class="storiesText">Manicure</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CUPONES -->
+            <div>
+              <img class="obCupon" src="img/cupones.png">
+              <!-- <button class="cuponBtn">Añadir Cupon</button> -->
+              <p class="cuponBtn">Añadir Cupon</p>
+            </div>
+
+            <!-- NEGOCIOS MAS VISITADOS -->
+            <div>
+              <h1 class="masVisit">Más Visitados</h1>
+            </div>
+
+            <!-- Contenedores Negocios -->
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col">
+                  <img class="photos" src="img/barber_neg.png">
+                </div>
+                <div class="col">
+                  <p class="h1Photos">Barberia</p>
+                  <p class="namePhotos">Jordan Wise</p>
+                  <p class="namePhotos">125,908 Views - 2 day Ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col">
+                  <img class="photos" src="img/vete.png">
+                </div>
+                <div class="col">
+                  <p class="h1Photos">Veterinaria</p>
+                  <p class="namePhotos">Jordan Wise</p>
+                  <p class="namePhotos">125,908 Views - 2 day Ago</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Menú de pie -->
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <i class="fas fa-home"></i>
+                  <p class="storiesText">Inicio</p>
+                </div>
+                <div class="col-3">
+                  <i class="fas fa-search lupa"></i>
+                  <p class="storiesText">Buscar</p>
+                </div>
+                <div class="col-3">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p class="storiesText">Compras</p>
+                </div>
+                <div class="col-3">
+                  <img class="perfil" src="img/barber.png">
+                  <p class="storiesText">Perfil</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+          <!-- SLIDER-NEGOCIOS -->
+          <div v-if="steep == 3" class="bgWhite">
+            <!-- SLIDER -->
+            <div class="slider">
+              <ul>
+                <li>
+                  <img src="img/slider/barber1.png">
+                  <p>BARBER</p>
+                </li>
+                <li>
+                  <img src="img/slider/barber2.png">
+                  <p>BARBER</p>
+                </li>
+                <li>
+                  <img src="img/slider/barber3.png">
+                  <p>BARBER</p>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <img style="margin-top: -16px;" src="img/bienvenido.png">
+            </div>
+
+            <!-- SERVICIOS -->
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col">
+                  <img src="img/serv1.png">
+                  <p> Perfilado de Barba</p>
+                </div>
+                <div class="col">
+                  <img src="img/serv2.png">
+                  <p> Corte de Cabello</p>
+                </div>
+                <div class="col">
+                 <img src="img/serv3.png">
+                  <p> Limpieza Facial</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <button @click="steep = 2"><-</button>
+            <button @click="steep = 3">GO!</button>
+          </div>
+
+            <!-- <h1>Apache Cordova</h1>{{message}}
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div> -->
+        </div>
+        <!-- development version, includes helpful console warnings VUEJS-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e6eaffff1b.js" crossorigin="anonymous"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/functions.js"></script>
+
+    </body>
+</html>

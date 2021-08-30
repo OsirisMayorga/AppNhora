@@ -1,0 +1,195 @@
+/*STEEP1*/
+.inicio{
+	/* LOGO-INI */
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(351.29deg, rgb(255 255 255) 51.84%, rgb(0 202 234) 103.47%);
+	backdrop-filter: blur(4px);
+	/* Note: backdrop-filter has minimal browser support */
+
+	/*transform: matrix(-1, 0, 0, 1, 0, 0);*/
+}
+.logo{
+	width: 40vw;
+  margin-left: 110px;
+  margin-top: 230px;
+}
+
+.logoFuente{
+
+	margin-top: 50px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 54px;
+
+	color: #0F1F27;
+}
+
+/*STEEP2*/
+.bgWhite{
+	width: 100vw;
+	height: 100vh;
+	background: #FFFFFF;
+}
+.logoPequeno{
+	width: 10vw;
+  margin-top: 20px;
+}
+
+.descubrir{
+
+	margin-left: -100px;
+	margin-top: 20px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 54px;
+	text-transform:none;
+
+	color: #00CAEA;
+}
+.lupa{
+	margin-top: 40px;
+	margin-left: 55px;
+}
+.storiesPhotos{
+	width: 13vw;
+  margin-top: 20px;
+  border-radius: 150px;
+}
+.storiesText{
+	margin-top: 10px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 11px;
+	text-transform:none;
+
+	color: #808191;
+}
+
+.obCupon{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.cuponBtn{
+
+  margin-top: -50px;
+  margin-left: 52px;
+  font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 11px;
+	text-transform:none;
+
+	color: #00CAEA;
+
+}
+
+.masVisit{
+
+	margin-top: 70px;
+	margin-left: 25px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform:none;
+	text-align: left;
+
+	color: #00CAEA;
+}
+
+.photos{
+	margin-top: 20px;
+  margin-left: 12px;
+  border-radius: 10px;
+}
+
+.h1Photos{
+	margin-top: 25px;
+  margin-left: -35px;
+  font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform:none;
+	letter-spacing: 0.3px;
+	color: #0F1F27;
+}
+
+.namePhotos{
+  margin-left: -35px;
+  font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
+	text-transform:none;
+	letter-spacing: 0.5px;
+	color: #0F1F27;
+	opacity: 0.5;
+}
+
+.perfil{
+	width: 9vw;
+  margin-top: 20px;
+  border-radius: 150px;
+}
+
+/*SLIDER*/
+.slider {	
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	35% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+	
+	65% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+	
+}
+
+.slider p{
+	margin-top: -130px;
+  margin-left: 130px;
+  font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+	color: #FFFFFF;
+	text-transform:none;
+	letter-spacing: 0.5px;
+	display: table-caption;
+}
