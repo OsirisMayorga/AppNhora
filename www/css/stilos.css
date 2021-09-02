@@ -165,7 +165,7 @@
 }
 
 .slider img {
-	width: 100%;
+	width: 100vw;
 }
 
 @keyframes cambio {
@@ -230,7 +230,32 @@
 	font-size: 10px;
 	text-transform:none;
 	color: #0F1F27 !important;
-	margin-left: 5px;
+  margin-left: 5px;
+}
+
+.btnServiceRes{
+	border: 2px solid rgba(227, 227, 227, 0.8);
+	box-sizing: border-box;
+	border-radius: 20px;
+	background: #FFFFFF;
+  margin-top: 6px;
+}
+
+.btnServiceRes i{
+	color: #00CAEA;
+	font-size: 15px !important;
+  text-align: initial;
+
+}
+
+.btnServiceRes a{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+	text-transform:none;
+	color: #0F1F27 !important;
+	margin-left: 10px;
 }
 
 .valoraciones h1{
@@ -241,7 +266,7 @@
 	font-size: 22px;
 	text-transform:none;
 	text-align: left;
-	color: #4D4D4D;
+	color: #4D4D4D!important;
 }
 
 .valoraciones p{
@@ -259,17 +284,27 @@
 	margin-left: 20px;
 }
 .comments{
-	margin-top: 25px;
-  margin-left: -35px;
+	margin-left: -125px!important;
+	margin-top: -14px;
   font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 22px;
-	text-transform:none;
-	letter-spacing: 0.3px;
-	color: #0F1F27;
+  font-style: normal;
+  font-size: 12px;
+  text-transform: none;
+  text-align: left;
+  color: #4D4D4D;
 
+}
+
+.commentsName{
+	margin-left: -125px!important;
+	margin-top: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: none;
+  text-align: left;
+  color: #4D4D4D;
 }
 
 /*steep4*/
@@ -387,3 +422,99 @@
 
 .btnGoogle i{
 	color: #626262!important;
+}
+
+/*STEEP 5 TICKET*/
+.bgWaves{
+	width: 100vw;
+	height: 100vh;
+	background-image:url(../img/waves.png)!important;
+  background: no-repeat;
+  margin-top: -17px;
+  position: absolute;
+
+}
+
+.textHeader{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	text-transform:none;
+	color: #FFFFFF !important;
+	margin-left: 10px;
+  margin-top: 10px;
+}
+
+.btnHeader{
+	border: 2px solid rgba(227, 227, 227, 0.8);
+	box-sizing: border-box;
+	border-radius: 20px;
+	background: #FFFFFF;
+  margin-top: 6px;
+  margin-left: 55px;
+
+}
+
+.btnHeader i{
+	color: #00CAEA;
+	font-size: 35px !important;
+  text-align: initial;
+
+}
+
+.btnHeader a{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	text-transform:none;
+	color: #0F1F27 !important;
+  padding: 10px;
+
+}
+
+.turnoTicket i{
+	color:  #0F1F27;
+	font-size: 132px !important;
+  margin-left: 110px;
+  margin-top: 11px;
+}
+
+.turnoTicket p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 49px;
+  text-transform: none;
+  color: #f8f9fa !important;
+  margin-left: 169px;
+  margin-top: -104px;
+}
+
+.turnoAntes i{
+  color: #00CAEA;
+  font-size: 40px !important;
+  padding: 5px;
+}
+
+.turnoAntes p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: none;
+  color: #0f1f27 !important;
+  margin-left: 249px;
+  margin-top: -37px;
+}
+
+.turnoAntes span{
+	font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: none;
+  color: #0f1f27 !important;
+  margin-left: 100px;
+}

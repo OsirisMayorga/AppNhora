@@ -42,14 +42,14 @@
     </head>
     <body>
         <div id="reservas">
-          <!-- LOGO -->
+          <!-- S1 LOGO -->
           <div v-if="steep == 1" class="inicio">
             <img class="logo" src="img/logo_n.png">
             <h1 class="logoFuente">N'Hora</h1>
             <button @click="steep = 2">GO!</button>
           </div>
 
-          <!-- STORIES -->
+          <!-- S2 STORIES -->
           <div v-if="steep == 2" class="bgWhite">
             <button @click="steep = 1"><-</button>
             <button @click="steep = 3">GO!</button>
@@ -151,7 +151,7 @@
             </div> 
           </div>
 
-          <!-- SLIDER-NEGOCIOS -->
+          <!-- S3 SLIDER-NEGOCIOS -->
           <div v-if="steep == 3" class="bgWhite">
             <!-- SLIDER -->
             <div class="slider">
@@ -185,8 +185,8 @@
                   <button class="btnService">
                     <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
                   </button>
-                  <button class="btnService">
-                    <i class="far fa-calendar-check"><a>Reservacion</a></i>
+                  <button class="btnServiceRes">
+                    <i class="far fa-calendar-check"><a>Reservación</a></i>
                   </button>
                 </div>
                 <div class="col" style="padding: 5px;">
@@ -196,8 +196,8 @@
                   <button class="btnService">
                     <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
                   </button>
-                  <button class="btnService">
-                    <i class="far fa-calendar-check"><a>Reservacion</a></i>
+                  <button class="btnServiceRes">
+                    <i class="far fa-calendar-check"><a>Reservación</a></i>
                   </button>
                 </div>
                 <div class="col" style="padding: 5px;">
@@ -207,8 +207,8 @@
                   <button class="btnService">
                     <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
                   </button>
-                  <button class="btnService">
-                    <i class="far fa-calendar-check"><a>Reservacion</a></i>
+                  <button class="btnServiceRes">
+                    <i class="far fa-calendar-check"><a>Reservación</a></i>
                   </button>
                 </div>
               </div>
@@ -230,8 +230,8 @@
                     <img class="perfil" src="img/profile.png">
                   </div>
                   <div class="col">
-                    <p class="comments">Kristin Watson</p>
-                    <p>Excelent!</p>
+                    <p class="commentsName">Kristin Watson</p>
+                    <p class="comments">Excelent!</p>
                   </div>
                 </div>
               </div>
@@ -241,15 +241,16 @@
             <button @click="steep = 4">GO!</button>
           </div>
 
-          <!-- LOGO -->
+          <!-- S4 LOG IN -->
           <div v-if="steep == 4" class="bgNegocio">
+            <button @click="steep = 3"><-</button>
             <div class="bgCaja">
               <img src="img/logo_n.png">
               <h1>Bienvenido a N'Hora</h1>
               <p>No hagas filas</p>
               <input type="username" name="username" placeholder="Username">
               <input type="username" name="username" placeholder="Password">
-              <button class="btnIngresar">
+              <button class="btnIngresar" @click="steep = 5">
                 <a>Ingresar</a>
               </button>
               <button class="btnGoogle">
@@ -258,10 +259,75 @@
               <button class="btnFb">
                 <i class="fab fa-facebook"><a>Continuar con Facebook</a></i>
               </button>
-              
             </div>
           </div>
 
+          <!-- S5 Ticket -->
+          <div v-if="steep == 5" class="bgWhite">
+            <!-- SLIDER -->
+            <div class="slider">
+              <ul>
+                <li>
+                  <img src="img/slider/barber1.png">
+                  <p>BARBER</p>
+                </li>
+                <li>
+                  <img src="img/slider/barber2.png">
+                  <p>BARBER</p>
+                </li>
+                <li>
+                  <img src="img/slider/barber3.png">
+                  <p>BARBER</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bgWaves">
+              <h1 class="textHeader">Bienvenidos</h1>
+              <button class="btnHeader">
+                  <i class="fas fa-ticket-alt"><a>Turno de ticket</a></i>
+                </button>
+                <div class="turnoTicket">
+                  <i class="fas fa-ticket-alt"></i>
+                  <p>6</p>
+                </div>
+                <div class="turnoAntes">
+                  <span>Antes de mi:</span>
+                  <i class="fas fa-ticket-alt"></i>
+                  <p>5</p>
+                </div>
+                <div class="valoraciones">
+                  <h1>Valoraciones</h1>
+                  <p>Comparte tu opinión con otros usuarios</p>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  
+                  <h1>Comentarios</h1>
+                  <div class="container">
+                    <div class="row align-items-start">
+                      <div class="col">
+                        <img class="perfil" src="img/profile.png">
+                      </div>
+                      <div class="col">
+                        <p class="commentsName">Kristin Watson</p>
+                        <p class="comments">Excelent!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- TURNO DE TICKET-->
+            
+
+            
+
+            <button @click="steep = 2"><-</button>
+            <button @click="steep = 4">GO!</button>
+          </div>
 
 
             <!-- <h1>Apache Cordova</h1>{{message}}
