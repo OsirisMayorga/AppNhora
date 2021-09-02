@@ -30,7 +30,7 @@
 /*STEEP2*/
 .bgWhite{
 	width: 100vw;
-	height: 115vh;
+	height: 125vh;
 	background: #FFFFFF;
 }
 .logoPequeno{
@@ -517,4 +517,55 @@
   text-transform: none;
   color: #0f1f27 !important;
   margin-left: 100px;
+}
+.btnCancelPos button{
+	
+	border: 2px solid rgba(227, 227, 227, 0.8);
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin-top: 45px;
+  margin-left: 17px;
+}
+.btnCancelPos i{
+	color: #FFFFFF;
+  font-size: 23px !important;
+  padding: 5px;
+}
+
+.btnCancelPos a{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	text-transform:none;
+	color: #FFFFFF !important;
+  padding: 10px;
+}
+	
+.reservacionDT{
+	margin-top: 32px;
+}	
+
+.reservacionDT input{
+	border: 2px solid rgba(227, 227, 227, 0.8);
+	box-sizing: border-box;
+	border-radius: 20px;
+  margin-left: 55px;
+  padding: 5px;
+  width: 262px;
+}
+.rervacionlbl{
+	font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: none;
+  margin-left: 109px;
+  margin-top: 13px;
+  color: #0f1f27;
+  
+}
+
+.mtContainer{
+	margin-top: 105px;">
 }

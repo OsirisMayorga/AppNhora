@@ -171,74 +171,76 @@
               </ul>
             </div>
 
-            <div>
-              <img style="margin-top: -16px;" src="img/bienvenido.png">
-            </div>
+            <div class="bgWaves">
+              <h1 class="textHeader">Bienvenidos</h1>
+              <button class="btnHeader" style="margin-left: 93px;">
+                <i class="fas fa-store"><a>Servicios</a></i>
+              </button>
 
-            <!-- SERVICIOS -->
-            <div class="container">
-              <div class="row align-items-start">
-                <div class="col" style="padding: 5px;">
-                  <img class="imgService" src="img/serv1.png">
-                  <p class="textService" style="color: #000000;"> Perfilado de Barba</p>
-                  <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $100.00 MXN</p>
-                  <button class="btnService">
-                    <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
-                  </button>
-                  <button class="btnServiceRes">
-                    <i class="far fa-calendar-check"><a>Reservación</a></i>
-                  </button>
-                </div>
-                <div class="col" style="padding: 5px;">
-                  <img class="imgService" src="img/serv2.png">
-                  <p class="textService" style="color: #000000;"> Corte de Cabello</p>
-                  <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $150.00 MXN</p>
-                  <button class="btnService">
-                    <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
-                  </button>
-                  <button class="btnServiceRes">
-                    <i class="far fa-calendar-check"><a>Reservación</a></i>
-                  </button>
-                </div>
-                <div class="col" style="padding: 5px;">
-                 <img class="imgService" src="img/serv3.png">
-                  <p class="textService" style="color: #000000;"> Limpieza Facial</p>
-                  <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $80.00 MXN</p>
-                  <button class="btnService">
-                    <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
-                  </button>
-                  <button class="btnServiceRes">
-                    <i class="far fa-calendar-check"><a>Reservación</a></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="valoraciones">
-              <h1>Valoraciones</h1>
-              <p>Comparte tu opinión con otros usuarios</p>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <!-- Comentarios -->
-              <h1>Comentarios</h1>
-              <div class="container">
+              <!-- SERVICIOS -->
+              <div class="container mtContainer">
                 <div class="row align-items-start">
-                  <div class="col">
-                    <img class="perfil" src="img/profile.png">
+                  <div class="col" style="padding: 5px;">
+                    <img class="imgService" src="img/serv1.png">
+                    <p class="textService" style="color: #000000;"> Perfilado de Barba</p>
+                    <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $100.00 MXN</p>
+                    <button class="btnService">
+                      <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
+                    </button>
+                    <button class="btnServiceRes">
+                      <i class="far fa-calendar-check"><a>Reservación</a></i>
+                    </button>
                   </div>
-                  <div class="col">
-                    <p class="commentsName">Kristin Watson</p>
-                    <p class="comments">Excelent!</p>
+                  <div class="col" style="padding: 5px;">
+                    <img class="imgService" src="img/serv2.png">
+                    <p class="textService" style="color: #000000;"> Corte de Cabello</p>
+                    <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $150.00 MXN</p>
+                    <button class="btnService">
+                      <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
+                    </button>
+                    <button class="btnServiceRes">
+                      <i class="far fa-calendar-check"><a>Reservación</a></i>
+                    </button>
+                  </div>
+                  <div class="col" style="padding: 5px;">
+                   <img class="imgService" src="img/serv3.png">
+                    <p class="textService" style="color: #000000;"> Limpieza Facial</p>
+                    <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $80.00 MXN</p>
+                    <button class="btnService">
+                      <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
+                    </button>
+                    <button class="btnServiceRes">
+                      <i class="far fa-calendar-check"><a>Reservación</a></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="valoraciones">
+                <h1>Valoraciones</h1>
+                <p>Comparte tu opinión con otros usuarios</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <!-- Comentarios -->
+                <h1>Comentarios</h1>
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col">
+                      <img class="perfil" src="img/profile.png">
+                    </div>
+                    <div class="col">
+                      <p class="commentsName">Kristin Watson</p>
+                      <p class="comments">Excelent!</p>
+                      <button @click="steep = 2"><-</button>
+                      <button @click="steep = 4">GO!</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <button @click="steep = 2"><-</button>
-            <button @click="steep = 4">GO!</button>
           </div>
 
           <!-- S4 LOG IN -->
@@ -283,50 +285,155 @@
             </div>
 
             <div class="bgWaves">
-              <h1>Bienvenidos</h1>
+              <h1 class="textHeader">Bienvenidos</h1>
               <button class="btnHeader">
-                  <i class="fas fa-ticket-alt"><a>Turno de ticket</a></i>
+                <i class="fas fa-ticket-alt"><a>Turno de ticket</a></i>
+              </button>
+              <div class="turnoTicket">
+                <i class="fas fa-ticket-alt"></i>
+                <p>6</p>
+              </div>
+              <div class="turnoAntes">
+                <span>Antes de mi:</span>
+                <i class="fas fa-ticket-alt"></i>
+                <p>5</p>
+              </div>
+              <div class="btnCancelPos">
+                <button style="background: #00CAEA;" type="button" >
+                  <i class="fas fa-history"><a style="color: #0f1f27 !important;">Posponer</a></i>
                 </button>
-                <div class="turnoTicket">
-                  <i class="fas fa-ticket-alt"></i>
-                  <p>6</p>
-                </div>
-                <div class="turnoAntes">
-                  <span>Antes de mi:</span>
-                  <i class="fas fa-ticket-alt"></i>
-                  <p>5</p>
-                </div>
-                <div class="valoraciones">
-                  <h1 class="textosTicket">Valoraciones</h1>
-                  <p>Comparte tu opinión con otros usuarios</p>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  
-                  <h1 class="textosTicket">Comentarios</h1>
-                  <div class="container">
-                    <div class="row align-items-start">
-                      <div class="col">
-                        <img class="perfil" src="img/profile.png">
-                      </div>
-                      <div class="col">
-                        <p class="commentsName">Kristin Watson</p>
-                        <p class="comments">Excelent!</p>
-                      </div>
+                <span>
+                  <button style="background: rgba(235, 48, 48, 0.86);" type="button" @click="cancelarAlert()">
+                    <i class="far fa-window-close"><a>Cancelar</a></i>
+                  </button>
+                </span>
+              </div>
+              <div class="valoraciones">
+                <h1>Valoraciones</h1>
+                <p>Comparte tu opinión con otros usuarios</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+                <h1>Comentarios</h1>
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col">
+                      <img class="perfil" src="img/profile.png">
+                    </div>
+                    <div class="col">
+                      <p class="commentsName">Kristin Watson</p>
+                      <p class="comments">Excelent!</p>
+                      <button @click="steep = 4"><-</button>
+                      <button @click="steep = 6">GO!</button>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
 
-            <!-- TURNO DE TICKET-->
-            
+            <!-- MODAL -->
+            <!-- <div class="modal fade" id="showModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Crear</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      - Select que va desde 5 min a 55 min de 5 en 5 y luego la ultima opción 1 hora o mas -
+                      <div class="form-group">
+                        <label for="attentionTime">¿Por cuanto tiempo desea posponer?</label>
+                        <select class="form-control" id="attentionTime">
+                          <option value="00:05">5 min</option>
+                          <option value="00:10">10 min</option>
+                          <option value="00:15">15 min</option>
+                          <option value="00:20">20 min</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
-            
 
-            <button @click="steep = 2"><-</button>
-            <button @click="steep = 4">GO!</button>
+
+
+          </div>
+
+
+
+
+
+          <!-- S6 Reservación -->
+          <div v-if="steep == 6" class="bgWhite">
+            <!-- SLIDER -->
+            <div class="slider">
+              <ul>
+                <li>
+                  <img src="img/slider/barber1.png">
+                  <p>BARBER</p>
+                </li>
+                <li>
+                  <img src="img/slider/barber2.png">
+                  <p>BARBER</p>
+                </li>
+                <li>
+                  <img src="img/slider/barber3.png">
+                  <p>BARBER</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bgWaves">
+              <h1 class="textHeader">Bienvenidos</h1>
+              <button class="btnHeader">
+                <i class="fas fa-calendar-day"><a style="font-size: 20px;!important">Hacer Reservación</a></i>
+              </button>
+              <div class="reservacionDT">
+                <label for="dateRes" class="rervacionlbl">Selecciona una Fecha</label>
+                <input type="date" id="dateRes">
+                <label for="timeRes" class="rervacionlbl">Selecciona Horario</label>
+                <input type="time" id="timeRes">
+              </div>
+              <div class="btnCancelPos">
+                <button style="background: #00CAEA; margin-left: 106px;">
+                  <i class="fas fa-check-circle"><a style="color: #0f1f27 !important;">Agendar</a></i>
+                </button>
+              </div>
+              <div class="valoraciones">
+                <h1>Valoraciones</h1>
+                <p>Comparte tu opinión con otros usuarios</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+                <h1>Comentarios</h1>
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col">
+                      <img class="perfil" src="img/profile.png">
+                    </div>
+                    <div class="col">
+                      <p class="commentsName">Kristin Watson</p>
+                      <p class="comments">Excelent!</p>
+                      <button @click="steep = 5"><-</button>
+                      <button @click="steep = 6">GO!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
 
 
