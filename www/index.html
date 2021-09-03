@@ -53,8 +53,6 @@
 
           <!-- S2 STORIES -->
           <div v-if="steep == 2" class="bgWhite">
-            <button @click="steep = 1"><-</button>
-            <!-- <button @click="steep = 3">GO!</button> -->
             <div class="container">
               <div class="row align-items-start">
                 <div class="col">
@@ -155,6 +153,9 @@
 
           <!-- S3 SLIDER-NEGOCIOS -->
           <div v-if="steep == 3" class="bgWhite">
+            <button @click="steep = 2" class="btnBack">
+              <i class="fas fa-arrow-circle-left btnBackI"></i>
+            </button>
             <!-- SLIDER -->
             <div class="slider">
               <ul>
@@ -236,8 +237,6 @@
                     <div class="col">
                       <p class="commentsName">Kristin Watson</p>
                       <p class="comments">Excelent!</p>
-                      <button @click="steep = 2"><-</button>
-                      <!-- <button @click="steep = 4">GO!</button> -->
                     </div>
                   </div>
                 </div>
@@ -247,7 +246,9 @@
 
           <!-- S4 LOG IN -->
           <div v-if="steep == 4" class="bgNegocio">
-            <button @click="steep = 3"><-</button>
+            <button @click="steep = 3" class="btnBack">
+              <i class="fas fa-arrow-circle-left btnBackI"></i>
+            </button>
             <div class="bgCaja">
               <img src="img/logo_n.png">
               <h1>Bienvenido a N'Hora</h1>
@@ -268,6 +269,9 @@
 
           <!-- S5 Ticket -->
           <div v-if="steep == 5" class="bgWhite">
+            <button @click="steep = 4" class="btnBack">
+              <i class="fas fa-arrow-circle-left btnBackI"></i>
+            </button>
             <!-- SLIDER -->
             <div class="slider">
               <ul>
@@ -328,9 +332,7 @@
                     <div class="col">
                       <p class="commentsName">Kristin Watson</p>
                       <p class="comments">Excelent!</p>
-                      <button @click="steep = 4">
-                        <i class="fas fa-arrow-circle-left"></i>
-                      </button>
+
                       <!-- <button @click="steep = 6">GO!</button> -->
                     </div>
                   </div>
@@ -368,9 +370,6 @@
               </div>
             </div>
 
-
-
-
           </div>
 
 
@@ -379,6 +378,9 @@
 
           <!-- S6 Reservación -->
           <div v-if="steep == 6" class="bgWhite">
+            <button @click="steep = 3" class="btnBack">
+              <i class="fas fa-arrow-circle-left btnBackI"></i>
+            </button>
             <!-- SLIDER -->
             <div class="slider">
               <ul>
@@ -431,8 +433,6 @@
                     <div class="col">
                       <p class="commentsName">Kristin Watson</p>
                       <p class="comments">Excelent!</p>
-                      <button @click="steep = 5"><-</button>
-                      <!-- <button @click="steep = 6">GO!</button> -->
                     </div>
                   </div>
                 </div>

@@ -627,3 +627,15 @@
   margin-top: 138px!important;
   margin-left: 39px!important;
 }
+
+.btnBack{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+  background: none;
+  border: none;
+}
+.btnBackI{
+	font-size: 30px !important;
+	color: #ffffffeb;
+}
