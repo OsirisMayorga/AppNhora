@@ -36,12 +36,14 @@
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/stilos.css">
+
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
         <title>N'Hora</title>
     </head>
     <body>
-        <div id="reservas">
+        <div id="reservas" style="overflow-x: hidden;">
           <!-- S1 LOGO -->
           <div v-if="steep == 1" class="inicio">
             <img class="logo" src="img/logo_n.png">
@@ -300,7 +302,7 @@
               </div>
               <div class="btnCancelPos">
                 <button style="background: #00CAEA;" type="button" >
-                  <i class="fas fa-history"><a style="color: #0f1f27 !important;">Posponer</a></i>
+                  <i v-on:click="openModal('modalPosponer')" class="fas fa-history"><a style="color: #0f1f27 !important;">Posponer</a></i>
                 </button>
                 <span>
                   <button style="background: rgba(235, 48, 48, 0.86);" type="button" @click="cancelarAlert()">
@@ -335,7 +337,7 @@
             </div>
 
             <!-- MODAL -->
-            <!-- <div class="modal fade" id="showModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal fade" id="modalPosponer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -361,7 +363,7 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
 
 
 
@@ -443,12 +445,23 @@
                 <p class="event received">Device is Ready</p>
             </div> -->
         </div>
+
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
         <!-- development version, includes helpful console warnings VUEJS-->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
         <!-- bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+        <!--Iconos-->
         <script src="https://kit.fontawesome.com/e6eaffff1b.js" crossorigin="anonymous"></script>
+
+        <!--Cordova-->
         <script src="cordova.js"></script>
+
+        <!--Scripts-->
         <script src="js/index.js"></script>
         <script src="js/functions.js"></script>
 

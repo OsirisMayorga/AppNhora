@@ -12,7 +12,11 @@ window.app = new Vue({
     },
     cancelarAlert:function(){
       alert("Hello! I am an alert box!");
-    }
+    },
+    openModal: function(id)
+    {
+      $("#"+id).modal("show");
+    },
   },
   mounted: function () {
     // this.initApp();   
