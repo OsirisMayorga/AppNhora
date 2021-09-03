@@ -48,13 +48,13 @@
           <div v-if="steep == 1" class="inicio">
             <img class="logo" src="img/logo_n.png">
             <h1 class="logoFuente">N'Hora</h1>
-            <button @click="steep = 2">GO!</button>
+            <button class="btninicio" @click="steep = 2">INICIAR</button>
           </div>
 
           <!-- S2 STORIES -->
           <div v-if="steep == 2" class="bgWhite">
             <button @click="steep = 1"><-</button>
-            <button @click="steep = 3">GO!</button>
+            <!-- <button @click="steep = 3">GO!</button> -->
             <div class="container">
               <div class="row align-items-start">
                 <div class="col">
@@ -106,7 +106,7 @@
             <div class="container">
               <div class="row align-items-start">
                 <div class="col">
-                  <img class="photos" src="img/barber_neg.png">
+                  <img class="photos" src="img/barber_neg.png" @click="steep = 3">
                 </div>
                 <div class="col">
                   <p class="h1Photos">Barberia</p>
@@ -186,10 +186,10 @@
                     <img class="imgService" src="img/serv1.png">
                     <p class="textService" style="color: #000000;"> Perfilado de Barba</p>
                     <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $100.00 MXN</p>
-                    <button class="btnService">
+                    <button class="btnService" @click="steep = 4">
                       <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
                     </button>
-                    <button class="btnServiceRes">
+                    <button class="btnServiceRes" @click="steep = 6">
                       <i class="far fa-calendar-check"><a>Reservación</a></i>
                     </button>
                   </div>
@@ -197,10 +197,10 @@
                     <img class="imgService" src="img/serv2.png">
                     <p class="textService" style="color: #000000;"> Corte de Cabello</p>
                     <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $150.00 MXN</p>
-                    <button class="btnService">
+                    <button class="btnService" @click="steep = 4">
                       <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
                     </button>
-                    <button class="btnServiceRes">
+                    <button class="btnServiceRes" @click="steep = 6">
                       <i class="far fa-calendar-check"><a>Reservación</a></i>
                     </button>
                   </div>
@@ -208,10 +208,10 @@
                    <img class="imgService" src="img/serv3.png">
                     <p class="textService" style="color: #000000;"> Limpieza Facial</p>
                     <p class="textService" style="color: #5B5B5B;margin-top: -10px;margin-left: 20px;"> $80.00 MXN</p>
-                    <button class="btnService">
+                    <button class="btnService" @click="steep = 4">
                       <i class="fas fa-ticket-alt"><a>Tomar ticket</a></i>
                     </button>
-                    <button class="btnServiceRes">
+                    <button class="btnServiceRes" @click="steep = 6">
                       <i class="far fa-calendar-check"><a>Reservación</a></i>
                     </button>
                   </div>
@@ -237,7 +237,7 @@
                       <p class="commentsName">Kristin Watson</p>
                       <p class="comments">Excelent!</p>
                       <button @click="steep = 2"><-</button>
-                      <button @click="steep = 4">GO!</button>
+                      <!-- <button @click="steep = 4">GO!</button> -->
                     </div>
                   </div>
                 </div>
@@ -328,8 +328,10 @@
                     <div class="col">
                       <p class="commentsName">Kristin Watson</p>
                       <p class="comments">Excelent!</p>
-                      <button @click="steep = 4"><-</button>
-                      <button @click="steep = 6">GO!</button>
+                      <button @click="steep = 4">
+                        <i class="fas fa-arrow-circle-left"></i>
+                      </button>
+                      <!-- <button @click="steep = 6">GO!</button> -->
                     </div>
                   </div>
                 </div>
@@ -341,24 +343,25 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Crear</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
                     <form>
-                      - Select que va desde 5 min a 55 min de 5 en 5 y luego la ultima opción 1 hora o mas -
                       <div class="form-group">
-                        <label for="attentionTime">¿Por cuanto tiempo desea posponer?</label>
-                        <select class="form-control" id="attentionTime">
+                        <img class="modalimg" src="img/logo_n.png">
+                        <i class="fas fa-history modalI"><a class="modalA">Posponer</a></i>
+                        <label for="attentionTime" class="rervacionlbl" style="text-align: center;margin-left: 5px!important;">¿Por cuanto tiempo desea posponer?</label>
+                        <select class="form-control mtSlct" id="attentionTime">
+                          <option value="" selected="">Seleccione tiempo</option>
                           <option value="00:05">5 min</option>
                           <option value="00:10">10 min</option>
                           <option value="00:15">15 min</option>
                           <option value="00:20">20 min</option>
                         </select>
                       </div>
-                      <button type="submit" class="btn btn-primary">Guardar</button>
+                      <button type="submit" class="btnModal">Guardar</button>
                     </form>
                   </div>
                 </div>
@@ -429,7 +432,7 @@
                       <p class="commentsName">Kristin Watson</p>
                       <p class="comments">Excelent!</p>
                       <button @click="steep = 5"><-</button>
-                      <button @click="steep = 6">GO!</button>
+                      <!-- <button @click="steep = 6">GO!</button> -->
                     </div>
                   </div>
                 </div>
